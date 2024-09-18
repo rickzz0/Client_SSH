@@ -1,8 +1,8 @@
 import paramiko
 
-host = "127.0.0.1"
-user = "kali"
-passwd = "kali"
+host = input("Digite o ip do host:")
+user = input("Digite o nome do usuario:")
+passwd = input("Digite a senha:")
 
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
